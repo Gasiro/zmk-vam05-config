@@ -1,0 +1,14 @@
+identifier: vam05_rev_a
+name: Vam05 Rev A
+type: mcu
+arch: arm
+toolchain:
+  - zephyr
+  - gnuarmemb
+  - xtools
+supported:
+  - adc
+  - usb_device
+  - ble
+  - pwm
+  - watchdog

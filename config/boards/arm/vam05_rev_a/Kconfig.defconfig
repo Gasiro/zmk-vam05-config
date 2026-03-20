@@ -1,0 +1,41 @@
+# Copyright (c) 2020 The ZMK Contributors
+# SPDX-License-Identifier: MIT
+
+if BOARD_VAM05_REV_A
+
+config ZMK_KEYBOARD_NAME
+	default "Vam05 Keyboard"
+
+if USB
+
+config USB_NRFX
+	default y
+
+config USB_DEVICE_STACK
+	default y
+
+endif # USB
+
+config BT_CTLR
+	default BT
+
+config ZMK_BLE
+	default y
+
+config ZMK_USB
+	default y
+
+config I2C
+	default y
+
+config MAX17048
+	default y
+
+config LED
+    default y
+
+config LED_LOCK_STATUS
+    bool "Enable LED lock indicators, such as Caps lock, Num Lock ..."
+    default n
+
+endif # BOARD_VAM05_REV_A

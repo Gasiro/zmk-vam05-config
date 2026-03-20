@@ -1,0 +1,21 @@
+manifest:
+  remotes:
+    - name: zmkfirmware
+      url-base: https://github.com/zmkfirmware
+    - name: caksoylar  # <-- rgb remote add
+      url-base: https://github.com/caksoylar  # <-- rgb remote add
+    - name: Gasiro
+      url-base: https://github.com/Gasiro
+  projects:
+    - name: zmk
+      remote: zmkfirmware
+      revision: v0.3
+      import: app/west.yml
+    - name: zmk-rgbled-widget  # <-- rgb remote add
+      remote: caksoylar  # <-- rgb remote add
+      revision: main  # <-- rgb remote add
+    - name: zmk-batt-led-indicator
+      remote: Gasiro
+      revision: main
+  self:
+    path: config
